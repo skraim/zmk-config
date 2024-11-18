@@ -71,12 +71,12 @@
         };
 
         rgui {
-            bindings = <&kp RGUI>;
+            bindings = <&kp CAPS>;
             key-positions = <14 15 16>;
         };
 
         rgui2 {
-            bindings = <&kp RGUI>;
+            bindings = <&kp CAPS>;
             key-positions = <19 20 21>;
         };
     };
