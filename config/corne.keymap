@@ -19,7 +19,7 @@
             tapping-term-ms = <150>;
             flavor = "balanced";
             hold-trigger-key-positions = <13 14 15 16 19 20 21 22>;
-            quick-tap-ms = <120>;
+            quick-tap-ms = <150>;
         };
 
         hold_tap: hold_tap {
@@ -31,7 +31,7 @@
             tapping-term-ms = <150>;
             flavor = "balanced";
             hold-trigger-key-positions = <36 37 38 39 40 41>;
-            quick-tap-ms = <120>;
+            quick-tap-ms = <150>;
         };
 
         cw: cw {
@@ -131,19 +131,19 @@
 
         func {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &cw              &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans           &kp F1  &kp F2  &kp F3  &kp F12  &trans
-                        &trans  &trans  &trans    &trans           &trans  &trans
+&trans  &trans  &trans  &trans       &trans  &trans    &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans  &trans  &trans       &trans  &trans    &cw              &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &trans  &trans  &trans       &trans  &trans    &trans           &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                        &bootloader  &trans  &trans    &trans           &trans  &trans
             >;
         };
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp END    &kp HOME   &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp PG_DN  &kp PG_UP  &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp END    &kp HOME     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP       &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp PG_DN  &kp PG_UP    &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans    &trans     &bootloader
             >;
         };
 
