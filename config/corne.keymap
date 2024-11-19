@@ -102,6 +102,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "alpha";
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -117,6 +118,7 @@
         };
 
         num_bt {
+            display-name = "num";
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -132,6 +134,7 @@
         };
 
         symb {
+            display-name = "symb";
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -147,6 +150,7 @@
         };
 
         func {
+            display-name = "func";
             bindings = <
 &trans  &trans  &trans  &trans       &trans  &trans    &kp PRINTSCREEN  &kp F7  &kp F8  &kp F9  &kp F10  &trans
 &trans  &trans  &trans  &trans       &trans  &trans    &cw              &kp F4  &kp F5  &kp F6  &kp F11  &trans
@@ -156,6 +160,7 @@
         };
 
         nav {
+            display-name = "nav";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp END    &kp HOME     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP       &kp RIGHT  &trans  &trans
@@ -165,20 +170,12 @@
         };
 
         media {
+            display-name = "media";
             bindings = <
 &trans  &trans  &trans      &kp C_VOLUME_UP  &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp K_PREV  &kp C_VOL_DN     &kp K_NEXT        &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans      &kp K_MUTE       &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
                             &trans           &kp K_PLAY_PAUSE  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
