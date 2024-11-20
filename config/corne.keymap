@@ -18,8 +18,8 @@
             #binding-cells = <2>;
             tapping-term-ms = <170>;
             flavor = "balanced";
-            hold-trigger-key-positions = <14 15 16 19 20 21 13 36 37 38 39 40 41 22>;
-            quick-tap-ms = <170>;
+            hold-trigger-key-positions = <14 15 16 19 20 21 13 36 37 38 39 40 41 22 28>;
+            quick-tap-ms = <230>;
             hold-trigger-on-release;
             require-prior-idle-ms = <100>;
         };
@@ -33,7 +33,7 @@
             tapping-term-ms = <170>;
             flavor = "balanced";
             hold-trigger-key-positions = <36 37 38 39 40 41 13 14 15 16 19 20 21 22>;
-            quick-tap-ms = <170>;
+            quick-tap-ms = <230>;
             hold-trigger-on-release;
         };
 
@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CW";
             #binding-cells = <0>;
-            continue-list = <Q W F P B A R S T G Z X C D V J L U Y SEMICOLON M N E I O K H COMMA DOT BACKSLASH SLASH RIGHT_BRACKET LEFT_BRACKET SINGLE_QUOTE APOSTROPHE>;
+            continue-list = <Q W F P B A R S T G Z X C D V J L U Y SEMICOLON M N E I O K H COMMA DOT BACKSLASH SLASH RIGHT_BRACKET LEFT_BRACKET SINGLE_QUOTE APOSTROPHE BACKSPACE>;
         };
 
         hrmp: hrmp {
@@ -52,7 +52,7 @@
             #binding-cells = <2>;
             hold-trigger-key-positions = <13 22 14 15 16 36 37 38 39 40 41 19 20 21>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            quick-tap-ms = <230>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
             hold-trigger-on-release;
@@ -103,6 +103,7 @@
 
         default_layer {
             display-name = "alpha";
+
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -119,6 +120,7 @@
 
         num_bt {
             display-name = "num";
+
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -135,6 +137,7 @@
 
         symb {
             display-name = "symb";
+
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
