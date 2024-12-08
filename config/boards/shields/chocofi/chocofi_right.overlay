@@ -1,6 +1,6 @@
 #include "chocofi.dtsi"
 
-&transform {
+&default_transform {
     col-offset = <6>;
 };
 
